@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>gtrbgkjesljbdfxjkilwsbh</p>
+{% for item in users%}
+<p>{{ item.id }} gjgjgjgg</p>
+<table class="table table-striped">
+    <h1>Action № {{ item.id }}</h1>
+    <tr>
+        <th>title of activity</th>
+        <th>team leader</th>
+        <th>duration</th>
+        <th>list of collaborators</th>
+        <th>is finished</th>
+    </tr>
+    <tr>
+        <td>{{ item.job }}</td>
+        <td>{{ item.leader }}</td>
+        <td></td>
+        <td>{{ item.collaborators }}</td>
+        <td>{{ item.is_finished }}</td>
+    </tr>
+</table>
+{% endfor %}
+{% endblock %}
